@@ -1,0 +1,113 @@
+.services {
+  padding: calc(var(--spacing-base) * 12) 0;
+  background: white;
+}
+
+.services-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto calc(var(--spacing-base) * 8);
+}
+
+.services-title {
+  margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.services-subtitle {
+  font-size: 1.2rem;
+  color: var(--neutral-600);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: calc(var(--spacing-base) * 4);
+}
+
+.service-card {
+  background: white;
+  padding: calc(var(--spacing-base) * 4);
+  border-radius: calc(var(--spacing-base) * 2);
+  border: 2px solid var(--neutral-100);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 40px rgba(0, 102, 204, 0.15);
+  transform: translateY(-4px);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: calc(var(--spacing-base) * 2);
+  display: inline-block;
+}
+
+.service-title {
+  margin-bottom: calc(var(--spacing-base) * 2);
+  color: var(--neutral-900);
+}
+
+.service-description {
+  color: var(--neutral-600);
+  margin-bottom: calc(var(--spacing-base) * 3);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+}
+
+.service-feature {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing-base) * 1.5);
+  padding: calc(var(--spacing-base) * 1) 0;
+  color: var(--neutral-700);
+  font-size: 0.95rem;
+}
+
+.feature-check {
+  width: 20px;
+  height: 20px;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: calc(var(--spacing-base) * 8) 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

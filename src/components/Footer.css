@@ -1,0 +1,90 @@
+.footer {
+  background: var(--neutral-900);
+  color: var(--neutral-300);
+  padding: calc(var(--spacing-base) * 8) 0 calc(var(--spacing-base) * 4);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: calc(var(--spacing-base) * 6);
+  margin-bottom: calc(var(--spacing-base) * 6);
+  padding-bottom: calc(var(--spacing-base) * 6);
+  border-bottom: 1px solid var(--neutral-800);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.footer-description {
+  color: var(--neutral-400);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-base) * 1.5);
+}
+
+.footer-links a,
+.footer-contact a {
+  color: var(--neutral-400);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-copyright {
+  color: var(--neutral-500);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--spacing-base) * 4);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: calc(var(--spacing-base) * 6) 0 calc(var(--spacing-base) * 3);
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-base) * 4);
+  }
+}

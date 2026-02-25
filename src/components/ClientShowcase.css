@@ -1,0 +1,203 @@
+.client-showcase {
+  padding: calc(var(--spacing-base) * 12) 0;
+  background: linear-gradient(180deg, white 0%, var(--neutral-50) 100%);
+}
+
+.showcase-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto calc(var(--spacing-base) * 8);
+}
+
+.showcase-title {
+  margin-bottom: calc(var(--spacing-base) * 2);
+}
+
+.showcase-subtitle {
+  font-size: 1.2rem;
+  color: var(--neutral-600);
+}
+
+.client-card {
+  background: white;
+  border-radius: calc(var(--spacing-base) * 3);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: calc(var(--spacing-base) * 6);
+}
+
+.client-logo-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--spacing-base) * 6);
+  position: relative;
+  overflow: hidden;
+}
+
+.client-logo-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+}
+
+.client-logo {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-letters {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: white;
+  display: block;
+  letter-spacing: 0.1em;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logo-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  letter-spacing: 0.15em;
+  margin-top: calc(var(--spacing-base) * 1);
+}
+
+.client-info {
+  padding: calc(var(--spacing-base) * 6);
+}
+
+.client-name {
+  font-size: 2rem;
+  margin-bottom: calc(var(--spacing-base) * 2);
+  color: var(--neutral-900);
+}
+
+.client-description {
+  color: var(--neutral-600);
+  margin-bottom: calc(var(--spacing-base) * 4);
+  line-height: 1.7;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing-base) * 3);
+  margin-bottom: calc(var(--spacing-base) * 5);
+  padding: calc(var(--spacing-base) * 4) 0;
+  border-top: 2px solid var(--neutral-100);
+  border-bottom: 2px solid var(--neutral-100);
+}
+
+.result-item {
+  text-align: center;
+}
+
+.result-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: calc(var(--spacing-base) * 1);
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  font-weight: 500;
+}
+
+.solutions-applied {
+  margin-bottom: calc(var(--spacing-base) * 4);
+}
+
+.solutions-title {
+  font-size: 1.1rem;
+  margin-bottom: calc(var(--spacing-base) * 2);
+  color: var(--neutral-800);
+}
+
+.solutions-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--spacing-base) * 1.5);
+}
+
+.solution-tag {
+  background: var(--neutral-100);
+  color: var(--neutral-700);
+  padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2);
+  border-radius: calc(var(--spacing-base) * 3);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.solution-tag:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.client-testimonial {
+  background: var(--neutral-50);
+  padding: calc(var(--spacing-base) * 3);
+  border-left: 4px solid var(--primary);
+  border-radius: calc(var(--spacing-base) * 1);
+  font-style: italic;
+  color: var(--neutral-700);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.client-testimonial cite {
+  display: block;
+  margin-top: calc(var(--spacing-base) * 2);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--neutral-800);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+  .client-card {
+    grid-template-columns: 1fr;
+  }
+
+  .client-logo-section {
+    padding: calc(var(--spacing-base) * 8);
+  }
+
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-base) * 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .client-showcase {
+    padding: calc(var(--spacing-base) * 8) 0;
+  }
+
+  .client-info {
+    padding: calc(var(--spacing-base) * 4);
+  }
+
+  .logo-letters {
+    font-size: 3rem;
+  }
+
+  .result-value {
+    font-size: 2rem;
+  }
+}
