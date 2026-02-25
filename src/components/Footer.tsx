@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
                 <a href="mailto:contato@coopercloud.com.br">contato@coopercloud.com.br</a>
               </li>
               <li>
-                <a href="tel:+5511999999999">+55 (11) 9 9999-9999</a>
+                <a href="tel:+55 41 8452-0679">+55 41 8452-0679</a>
               </li>
             </ul>
           </div>
