@@ -30,7 +30,7 @@ export const CTA: React.FC = () => {
             Solicitar Proposta Agora
           </a>
           <p className="cta-contact">
-            Ou entre em contato: <a href="tel:+5511999999999" className="cta-link">+55 (11) 9 9999-9999</a>
+            Ou entre em contato: <a href="tel:+55 41 8452-0679" className="cta-link">+55 41 8452-0679</a>
           </p>
         </div>
       </div>
