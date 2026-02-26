@@ -36,10 +36,10 @@ export const Footer = () => {
             <h4 className="footer-title">Contato</h4>
             <ul className="footer-contact">
               <li>
-                <a href="mailto:contato@coopercloud.com.br">contato@coopercloud.com.br</a>
+                <a href="mailto:glecooper@gmail.com">glecooper@gmail.com</a>
               </li>
               <li>
-                <a href="tel:+55 41 8452-0679">+55 41 8452-0679</a>
+                <a href="tel:+55 41 98452-0679">+55 41 98452-0679</a>
               </li>
             </ul>
           </div>
