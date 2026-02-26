@@ -1,7 +1,6 @@
-import React from 'react';
 import './Footer.css';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -20,6 +19,7 @@ export const Footer: React.FC = () => {
             <ul className="footer-links">
               <li><a href="#servicos">FinOps</a></li>
               <li><a href="#servicos">Cloud Strategy</a></li>
+              <li><a href="#servicos">Desenvolvimento de Sites</a></li>
               <li><a href="#servicos">Consultoria TI</a></li>
             </ul>
           </div>

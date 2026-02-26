@@ -1,7 +1,6 @@
-import React from 'react';
 import './Hero.css';
 
-export const Hero: React.FC = () => {
+export const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-background"></div>
@@ -22,13 +21,6 @@ export const Hero: React.FC = () => {
             <a href="#servicos" className="btn btn-secondary">
               Conheça Nossos Serviços
             </a>
-          </div>
-          <div className="hero-trust">
-            <p className="trust-text">Confiado por líderes de mercado</p>
-            <div className="trust-badge">
-              <span className="trust-icon">✓</span>
-              <span>MOG Embalagens</span>
-            </div>
           </div>
         </div>
       </div>

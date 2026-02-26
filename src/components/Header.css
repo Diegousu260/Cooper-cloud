@@ -17,12 +17,10 @@
   padding: calc(var(--spacing-base) * 2) 0;
 }
 
-.logo-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  color: var(--primary);
-  letter-spacing: -0.02em;
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav {

@@ -1,4 +1,3 @@
-import React from 'react';
 import './Services.css';
 
 const services = [
@@ -25,6 +24,17 @@ const services = [
     icon: '☁️'
   },
   {
+    title: 'Desenvolvimento de Sites',
+    description: 'Sites modernos, responsivos e otimizados para conversão e performance.',
+    features: [
+      'Design responsivo',
+      'SEO otimizado',
+      'Performance máxima',
+      'Integração com APIs'
+    ],
+    icon: '🌐'
+  },
+  {
     title: 'Consultoria TI',
     description: 'Consultoria estratégica para transformação digital e modernização de sistemas.',
     features: [
@@ -37,7 +47,7 @@ const services = [
   }
 ];
 
-export const Services: React.FC = () => {
+export const Services = () => {
   return (
     <section id="servicos" className="services">
       <div className="container">

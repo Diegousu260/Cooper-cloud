@@ -1,7 +1,6 @@
-import React from 'react';
 import './CTA.css';
 
-export const CTA: React.FC = () => {
+export const CTA = () => {
   return (
     <section id="contato" className="cta">
       <div className="cta-background"></div>
